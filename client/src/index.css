@@ -1,5 +1,6 @@
 @import "tailwindcss";
 @import "tw-animate-css";
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700;800;900&family=Lora:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500;600&display=swap');
 
 @custom-variant dark (&:is(.dark *));
 
@@ -43,6 +44,19 @@
 }
 
 :root {
+  /* Editorial Color Palette */
+  --color-navy: #0F1419;
+  --color-gold: #D4AF37;
+  --color-gold-dark: #C9A961;
+  --color-cream: #F5F1E8;
+  --color-slate: #6B7280;
+  --color-slate-light: #9CA3AF;
+  
+  /* Typography */
+  --font-display: 'Playfair Display', serif;
+  --font-body: 'Lora', serif;
+  --font-mono: 'IBM Plex Mono', monospace;
+  
   --primary: var(--color-blue-700);
   --primary-foreground: var(--color-blue-50);
   --sidebar-primary: var(--color-blue-600);
@@ -53,8 +67,8 @@
   --chart-4: var(--color-blue-700);
   --chart-5: var(--color-blue-800);
   --radius: 0.65rem;
-  --background: oklch(1 0 0);
-  --foreground: oklch(0.235 0.015 65);
+  --background: #0F1419;
+  --foreground: #F5F1E8;
   --card: oklch(1 0 0);
   --card-foreground: oklch(0.235 0.015 65);
   --popover: oklch(1 0 0);

@@ -1,25 +1,39 @@
-import { Button } from "@/components/ui/button";
-import { Loader2 } from "lucide-react";
-import { Streamdown } from 'streamdown';
+import Header from '@/components/Header';
+import Hero from '@/components/Hero';
+import Services from '@/components/Services';
+import Projects from '@/components/Projects';
+import Skills from '@/components/Skills';
+import Timeline from '@/components/Timeline';
+import Testimonials from '@/components/Testimonials';
+import Contact from '@/components/Contact';
+import Footer from '@/components/Footer';
+import '../styles/editorial.css';
 
 /**
- * All content in this page are only for example, replace with your own feature implementation
- * When building pages, remember your instructions in Frontend Best Practices, Design Guide and Common Pitfalls
+ * Home Page - Editorial Luxury Portfolio
+ * 
+ * Design Philosophy: Editorial Luxury
+ * - Asymmetrical layouts
+ * - Generous negative space
+ * - High-impact motion and animations
+ * - Refined typography hierarchy
+ * - Gold and navy color palette
  */
-export default function Home() {
-  // If theme is switchable in App.tsx, we can implement theme toggling like this:
-  // const { theme, toggleTheme } = useTheme();
 
+export default function Home() {
   return (
-    <div className="min-h-screen flex flex-col">
+    <div className="min-h-screen bg-navy text-cream" dir="rtl">
+      <Header />
       <main>
-        {/* Example: lucide-react for icons */}
-        <Loader2 className="animate-spin" />
-        Example Page
-        {/* Example: Streamdown for markdown rendering */}
-        <Streamdown>Any **markdown** content</Streamdown>
-        <Button variant="default">Example Button</Button>
+        <Hero />
+        <Services />
+        <Projects />
+        <Skills />
+        <Timeline />
+        <Testimonials />
+        <Contact />
       </main>
+      <Footer />
     </div>
   );
 }
