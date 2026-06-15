@@ -1,0 +1,68 @@
+{
+  "name": "عزالدين العبادي - بورتفوليو",
+  "short_name": "Ezaldyn Portfolio",
+  "description": "بورتفوليو احترافي لمهندس البرمجيات عزالدين العبادي - متخصص في تطوير الويب والذكاء الاصطناعي",
+  "start_url": "/",
+  "scope": "/",
+  "display": "standalone",
+  "orientation": "portrait-primary",
+  "background_color": "#0F1419",
+  "theme_color": "#D4AF37",
+  "icons": [
+    {
+      "src": "data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 192 192'><rect fill='%23D4AF37' width='192' height='192'/><text x='50%' y='50%' font-size='120' font-weight='bold' fill='%230F1419' text-anchor='middle' dominant-baseline='central' font-family='serif'>E</text></svg>",
+      "sizes": "192x192",
+      "type": "image/svg+xml",
+      "purpose": "any"
+    },
+    {
+      "src": "data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 512 512'><rect fill='%23D4AF37' width='512' height='512'/><text x='50%' y='50%' font-size='320' font-weight='bold' fill='%230F1419' text-anchor='middle' dominant-baseline='central' font-family='serif'>E</text></svg>",
+      "sizes": "512x512",
+      "type": "image/svg+xml",
+      "purpose": "any maskable"
+    }
+  ],
+  "screenshots": [
+    {
+      "src": "data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 540 720'><rect fill='%230F1419' width='540' height='720'/><text x='50%' y='50%' font-size='80' font-weight='bold' fill='%23D4AF37' text-anchor='middle' dominant-baseline='central' font-family='serif'>Ezaldyn Portfolio</text></svg>",
+      "sizes": "540x720",
+      "type": "image/svg+xml",
+      "form_factor": "narrow"
+    },
+    {
+      "src": "data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 1280 720'><rect fill='%230F1419' width='1280' height='720'/><text x='50%' y='50%' font-size='80' font-weight='bold' fill='%23D4AF37' text-anchor='middle' dominant-baseline='central' font-family='serif'>Ezaldyn Portfolio</text></svg>",
+      "sizes": "1280x720",
+      "type": "image/svg+xml",
+      "form_factor": "wide"
+    }
+  ],
+  "categories": ["business", "productivity"],
+  "shortcuts": [
+    {
+      "name": "عرض المشاريع",
+      "short_name": "المشاريع",
+      "description": "اعرض جميع المشاريع المميزة",
+      "url": "/#projects",
+      "icons": [
+        {
+          "src": "data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 96 96'><rect fill='%23D4AF37' width='96' height='96'/><text x='50%' y='50%' font-size='60' font-weight='bold' fill='%230F1419' text-anchor='middle' dominant-baseline='central' font-family='serif'>P</text></svg>",
+          "sizes": "96x96",
+          "type": "image/svg+xml"
+        }
+      ]
+    },
+    {
+      "name": "تواصل معي",
+      "short_name": "التواصل",
+      "description": "اتصل بي الآن",
+      "url": "/#contact",
+      "icons": [
+        {
+          "src": "data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 96 96'><rect fill='%23D4AF37' width='96' height='96'/><text x='50%' y='50%' font-size='60' font-weight='bold' fill='%230F1419' text-anchor='middle' dominant-baseline='central' font-family='serif'>C</text></svg>",
+          "sizes": "96x96",
+          "type": "image/svg+xml"
+        }
+      ]
+    }
+  ]
+}

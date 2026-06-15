@@ -6,7 +6,17 @@
     <meta
       name="viewport"
       content="width=device-width, initial-scale=1.0, maximum-scale=1" />
-    <title>Ezaldyn Al-Abadi | Portfolio</title>    
+    <title>Ezaldyn Al-Abadi | Portfolio</title>
+    
+    <!-- PWA Meta Tags -->
+    <meta name="theme-color" content="#D4AF37" />
+    <meta name="description" content="بورتفوليو احترافي لمهندس البرمجيات عزالدين العبادي - متخصص في تطوير الويب والذكاء الاصطناعي" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+    <meta name="apple-mobile-web-app-title" content="Ezaldyn Portfolio" />
+    <link rel="manifest" href="/manifest.json" />
+    <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect fill='%23D4AF37' width='100' height='100'/><text x='50' y='70' font-size='80' font-weight='bold' fill='%230F1419' text-anchor='middle' font-family='serif'>E</text></svg>" />
+    
     <!-- THIS IS THE START OF A COMMENT BLOCK, BLOCK TO BE DELETED: Google Fonts here, example:
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -21,6 +31,17 @@
       defer
       src="%VITE_ANALYTICS_ENDPOINT%/umami"
       data-website-id="%VITE_ANALYTICS_WEBSITE_ID%"></script>
+    
+    <!-- Register Service Worker for PWA -->
+    <script>
+      if ('serviceWorker' in navigator) {
+        window.addEventListener('load', () => {
+          navigator.serviceWorker.register('/sw.js').catch(() => {
+            // Service Worker registration failed, continue without it
+          });
+        });
+      }
+    </script>
   </body>
 
 </html>
