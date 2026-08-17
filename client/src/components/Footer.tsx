@@ -14,10 +14,8 @@ export default function Footer() {
   const currentYear = new Date().getFullYear();
 
   const quickLinks = [
-    { label: 'GitHub', url: 'https://github.com' },
-    { label: 'LinkedIn', url: 'https://linkedin.com' },
-    { label: 'Twitter', url: 'https://twitter.com' },
-    { label: 'Email', url: 'mailto:ezaldyn@example.com' }
+    { label: 'GitHub', url: 'https://github.com/albadyzaldyn111-a11y' },
+    { label: 'مشاريع الموقع', url: 'https://github.com/albadyzaldyn111-a11y/ezaldyn-portfolio' }
   ];
 
   return (
@@ -40,7 +38,7 @@ export default function Footer() {
               </span>
             </div>
             <p className="text-sm text-slate-light leading-relaxed">
-              مهندس برمجيات متخصص في تطوير الويب والذكاء الاصطناعي. أحول الأفكار إلى حلول رقمية أنيقة وفعالة.
+              مهندس تقنية معلومات ومطور برمجيات من إب، اليمن. أحوّل الأفكار إلى حلول رقمية عملية وقابلة للتطوير.
             </p>
           </div>
 
@@ -95,16 +93,20 @@ export default function Footer() {
           </p>
           <div className="flex gap-6">
             <a
-              href="#"
+              href="https://github.com/albadyzaldyn111-a11y/ezaldyn-portfolio"
+              target="_blank"
+              rel="noopener noreferrer"
               className="text-sm text-slate-light hover:text-gold transition-colors duration-300"
             >
-              سياسة الخصوصية
+              المستودع البرمجي
             </a>
             <a
-              href="#"
+              href="https://github.com/albadyzaldyn111-a11y"
+              target="_blank"
+              rel="noopener noreferrer"
               className="text-sm text-slate-light hover:text-gold transition-colors duration-300"
             >
-              شروط الاستخدام
+              حساب GitHub
             </a>
           </div>
         </div>

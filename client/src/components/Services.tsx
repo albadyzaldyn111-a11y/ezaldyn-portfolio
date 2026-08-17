@@ -39,7 +39,7 @@ export default function Services() {
           <div className="accent-line" />
           <div>
             <h2 className="section-title">الخدمات المتخصصة</h2>
-            <p className="section-subtitle">حلول برمجية مخصصة لاحتياجاتك</p>
+            <p className="section-subtitle">خدمات عملية تبدأ من المشكلة وتنتهي بحل قابل للاستخدام والتطوير.</p>
           </div>
         </div>
 
@@ -81,7 +81,7 @@ export default function Services() {
         {/* CTA Section */}
         <div className="text-center mt-16 sm:mt-24">
           <p className="text-lg sm:text-xl text-cream opacity-85 mb-8 max-w-2xl mx-auto">
-            هل لديك مشروع معين في ذهنك؟ دعنا نناقش كيف يمكنني مساعدتك في تحقيق أهدافك.
+            لديك فكرة أو عملية تريد أتمتتها؟ أرسل التفاصيل، وسأساعدك على تحويلها إلى خطة تنفيذ واضحة.
           </p>
           <a
             href="#contact"

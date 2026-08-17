@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import { Mail, Phone, MapPin, Send } from 'lucide-react';
+import { Mail, Github, MapPin, Send } from 'lucide-react';
 import '../styles/editorial.css';
 
 /**
@@ -33,14 +33,18 @@ export default function Contact() {
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
     setIsSubmitting(true);
-    
-    // Simulate form submission
-    setTimeout(() => {
-      console.log('Form submitted:', formData);
-      setFormData({ name: '', email: '', subject: '', message: '' });
-      setIsSubmitting(false);
-      alert('شكراً لرسالتك! سأرد عليك قريباً.');
-    }, 1500);
+
+    const issueBody = [
+      `الاسم: ${formData.name}`,
+      `البريد: ${formData.email}`,
+      '',
+      formData.message,
+    ].join('\\n');
+    const issueUrl = `https://github.com/albadyzaldyn111-a11y/ezaldyn-portfolio/issues/new?title=${encodeURIComponent(formData.subject)}&body=${encodeURIComponent(issueBody)}`;
+
+    window.open(issueUrl, '_blank', 'noopener,noreferrer');
+    setFormData({ name: '', email: '', subject: '', message: '' });
+    setIsSubmitting(false);
   };
 
   return (
@@ -74,26 +78,30 @@ export default function Contact() {
               <div className="w-12 h-12 rounded-lg bg-gradient-to-br from-gold to-gold-dark p-3 mb-4 group-hover:scale-110 transition-transform duration-300">
                 <Mail className="w-6 h-6 text-navy" />
               </div>
-              <h3 className="text-lg font-display font-bold text-cream mb-2">البريد الإلكتروني</h3>
+              <h3 className="text-lg font-display font-bold text-cream mb-2">الملف المهني</h3>
               <a
-                href="mailto:ezaldyn@example.com"
+                href="https://github.com/albadyzaldyn111-a11y"
+                target="_blank"
+                rel="noopener noreferrer"
                 className="text-gold hover:text-gold-dark transition-colors duration-300 break-all"
               >
-                ezaldyn@example.com
+                GitHub / albadyzaldyn111-a11y
               </a>
             </div>
 
-            {/* Phone */}
+            {/* GitHub Contact */}
             <div className="floating-card group stagger-item" style={{ animationDelay: '0.2s' }}>
               <div className="w-12 h-12 rounded-lg bg-gradient-to-br from-gold to-gold-dark p-3 mb-4 group-hover:scale-110 transition-transform duration-300">
-                <Phone className="w-6 h-6 text-navy" />
+                <Github className="w-6 h-6 text-navy" />
               </div>
-              <h3 className="text-lg font-display font-bold text-cream mb-2">الهاتف</h3>
+              <h3 className="text-lg font-display font-bold text-cream mb-2">التواصل المهني</h3>
               <a
-                href="tel:+966501234567"
+                href="https://github.com/albadyzaldyn111-a11y"
+                target="_blank"
+                rel="noopener noreferrer"
                 className="text-gold hover:text-gold-dark transition-colors duration-300"
               >
-                +966 50 123 4567
+                افتح حساب GitHub
               </a>
             </div>
 
@@ -104,7 +112,7 @@ export default function Contact() {
               </div>
               <h3 className="text-lg font-display font-bold text-cream mb-2">الموقع</h3>
               <p className="text-gold">
-                اليمن، صنعاء
+                اليمن، إب
               </p>
             </div>
 
@@ -113,9 +121,7 @@ export default function Contact() {
               <h3 className="text-lg font-display font-bold text-cream mb-4">تابعني</h3>
               <div className="flex gap-3">
                 {[
-                  { name: 'GitHub', icon: '🐙', url: 'https://github.com' },
-                  { name: 'LinkedIn', icon: '💼', url: 'https://linkedin.com' },
-                  { name: 'Twitter', icon: '𝕏', url: 'https://twitter.com' }
+                  { name: 'GitHub', icon: '◉', url: 'https://github.com/albadyzaldyn111-a11y' }
                 ].map((social, idx) => (
                   <a
                     key={idx}
@@ -135,6 +141,7 @@ export default function Contact() {
           {/* Contact Form */}
           <div className="lg:col-span-2">
             <form onSubmit={handleSubmit} className="floating-card space-y-6">
+              <p className="text-sm text-slate-light leading-relaxed">بعد الإرسال ستفتح صفحة GitHub لإنشاء طلب تواصل جديد، ويمكنك مراجعته قبل الإرسال النهائي.</p>
               {/* Name */}
               <div className="stagger-item" style={{ animationDelay: '0.1s' }}>
                 <label className="block text-sm font-display font-bold text-cream mb-2">
@@ -214,7 +221,7 @@ export default function Contact() {
                 ) : (
                   <>
                     <Send className="w-5 h-5" />
-                    أرسل الرسالة
+                    إرسال عبر GitHub
                   </>
                 )}
               </button>

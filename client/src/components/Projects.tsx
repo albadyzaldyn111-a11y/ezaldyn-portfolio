@@ -1,5 +1,5 @@
-import { projects } from '@/data/portfolio';
 import { Github, ExternalLink } from 'lucide-react';
+import { projects } from '@/data/portfolio';
 import '../styles/editorial.css';
 
 /**
@@ -44,7 +44,7 @@ export default function Projects() {
           <div className="accent-line" />
           <div>
             <h2 className="section-title">المشاريع المميزة</h2>
-            <p className="section-subtitle">مشاريع متنوعة تعكس خبرتي وكفاءتي</p>
+            <p className="section-subtitle">أعمال عملية مرتبطة بمستودعات حقيقية، مع وصف واضح لما يقدمه كل مشروع.</p>
           </div>
         </div>
 
@@ -101,15 +101,17 @@ export default function Projects() {
                   <Github className="w-4 h-4" />
                   Code
                 </a>
-                <a
-                  href={project.demo}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="flex items-center gap-2 px-3 py-2 rounded text-sm font-mono text-gold hover:bg-gold hover:text-navy transition-all duration-300"
-                >
-                  <ExternalLink className="w-4 h-4" />
-                  Demo
-                </a>
+                {project.demo && project.demo !== 'https://ezaldyn.netlify.app/' && (
+                  <a
+                    href={project.demo}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="flex items-center gap-2 px-3 py-2 rounded text-sm font-mono text-gold hover:bg-gold hover:text-navy transition-all duration-300"
+                  >
+                    <ExternalLink className="w-4 h-4" />
+                    Demo
+                  </a>
+                )}
               </div>
             </div>
           ))}
@@ -124,7 +126,7 @@ export default function Projects() {
             هل تريد أن ترى المزيد من المشاريع؟
           </p>
           <a
-            href="https://github.com"
+            href="https://github.com/albadyzaldyn111-a11y"
             target="_blank"
             rel="noopener noreferrer"
             className="inline-flex items-center gap-2 px-8 py-3 rounded-lg bg-gold text-navy font-display font-bold text-lg hover:bg-gold-dark transition-all duration-300 hover:shadow-lg hover:-translate-y-1 active:scale-95"

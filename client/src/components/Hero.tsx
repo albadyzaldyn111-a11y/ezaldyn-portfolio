@@ -83,8 +83,8 @@ export default function Hero() {
             {/* Description */}
             <p className="text-lg sm:text-xl text-cream opacity-85 leading-relaxed max-w-2xl animate-fade-in-up" style={{ animationDelay: '0.4s' }}>
               {isRtl
-                ? 'أصمم وأطور تطبيقات ويب متكاملة وأنظمة ذكاء اصطناعي عالية الأداء. أحول الأفكار المعقدة إلى حلول رقمية أنيقة وفعالة.'
-                : 'I architect and build high-performance web applications and AI systems. Transforming complex ideas into elegant, scalable digital solutions.'}
+                ? 'أبني تطبيقات ويب وأندرويد عملية وأتمتة رقمية تساعدك على إطلاق فكرتك بسرعة، مع اهتمام بالأداء وتجربة المستخدم وقابلية التطوير.'
+                : 'I build practical web and Android applications plus digital automation that help you launch faster, with a focus on performance, usability, and scalability.'}
             </p>
 
             {/* CTA Buttons */}
@@ -93,13 +93,13 @@ export default function Hero() {
                 href="#projects"
                 className="px-8 py-3 rounded-lg bg-gold text-navy font-display font-bold text-lg hover:bg-gold-dark transition-all duration-300 hover:shadow-lg hover:-translate-y-1 active:scale-95"
               >
-                {isRtl ? 'استكشف أعمالي' : 'View My Work'}
+                {isRtl ? 'شاهد أعمالي' : 'View My Work'}
               </a>
               <a
                 href="#contact"
                 className="px-8 py-3 rounded-lg border-2 border-gold text-gold font-display font-bold text-lg hover:bg-gold hover:text-navy transition-all duration-300 hover:shadow-lg hover:-translate-y-1 active:scale-95 flex items-center gap-2"
               >
-                {isRtl ? 'تواصل معي' : 'Get In Touch'}
+                {isRtl ? 'اطلب مشروعًا' : 'Start a Project'}
                 <ArrowRight className="w-5 h-5" />
               </a>
             </div>
