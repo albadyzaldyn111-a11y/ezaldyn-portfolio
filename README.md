@@ -2,6 +2,8 @@
 
 A responsive, editorial-style software-engineering portfolio and PWA for **Ezaldyn Al-Abadi**. The site presents selected projects, services, technical skills, experience, and contact information in Arabic and English.
 
+**Live website:** [ezaldyn.netlify.app](https://ezaldyn.netlify.app/)
+
 ## Highlights
 
 - Responsive design for mobile, tablet, and desktop.
