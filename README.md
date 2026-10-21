@@ -1,258 +1,53 @@
-# بورتفوليو عزالدين العبادي | Ezaldyn Al-Abadi Portfolio
+# Ezaldyn Portfolio | بورتفوليو عزالدين العبادي
 
-بورتفوليو احترافي وفاخر لمهندس البرمجيات **عزالدين العبادي** - متخصص في تطوير الويب والذكاء الاصطناعي.
+A responsive, editorial-style software-engineering portfolio and PWA for **Ezaldyn Al-Abadi**. The site presents selected projects, services, technical skills, experience, and contact information in Arabic and English.
 
-## ✨ الميزات الرئيسية
+## Highlights
 
-### 🎨 التصميم
-- **Editorial Luxury Design** - تصميم فاخر وجريء مستوحى من الفن الحديث
-- **Responsive Design** - متناسب مع جميع أحجام الأجهزة (الهواتف، الأجهزة اللوحية، سطح المكتب)
-- **Dark Theme** - ثيم داكن فاخر مع ألوان ذهبية دافئة
-- **Smooth Animations** - حركات سلسة واحترافية
-- **Accessibility** - متوافق مع معايير الوصول
+- Responsive design for mobile, tablet, and desktop.
+- Arabic RTL and English presentation.
+- Dark visual theme with editorial/luxury direction.
+- Accessible UI foundations and keyboard-friendly interactions.
+- PWA capabilities, install experience, and offline-ready foundations.
+- Animated sections and optimized asset loading.
+- GitHub Pages-ready build workflow.
 
-### 📱 Progressive Web App (PWA)
-- **تثبيت التطبيق** - يمكن تثبيت الموقع كتطبيق على الهاتف أو سطح المكتب
-- **Offline Support** - يعمل بدون اتصال إنترنت (مع Service Worker)
-- **App Shortcuts** - اختصارات سريعة للوصول إلى الأقسام المهمة
-- **Native App Experience** - تجربة تطبيق أصلي
+## Technology stack
 
-### 🚀 الأداء
-- **Fast Loading** - تحميل سريع جداً
-- **Optimized Assets** - أصول محسّنة
-- **Code Splitting** - تقسيم الكود لتحسين الأداء
-- **Caching Strategy** - استراتيجية تخزين ذكية
+- React 19
+- TypeScript
+- Vite
+- Tailwind CSS
+- Framer Motion
+- Wouter
+- shadcn/ui
 
-### 🔄 النشر التلقائي
-- **GitHub Pages** - استضافة مجانية ودائمة عبر GitHub
-- **GitHub Actions** - نشر تلقائي عند كل push
-- **CI/CD Pipeline** - خط أنابيب تطوير مستمر
+## Local development
 
-## 📋 الأقسام
-
-1. **Hero** - قسم البداية الرئيسي مع صورة شخصية
-2. **Services** - الخدمات المتخصصة
-3. **Projects** - المشاريع المميزة
-4. **Skills** - المهارات والتقنيات
-5. **Timeline** - رحلة العمل والخبرة
-6. **Testimonials** - آراء العملاء
-7. **Contact** - نموذج التواصل
-
-## 🛠️ التكنولوجيات المستخدمة
-
-- **React 19** - مكتبة واجهات المستخدم
-- **Vite** - أداة البناء السريعة
-- **Tailwind CSS 4** - إطار عمل CSS
-- **TypeScript** - لغة البرمجة
-- **Wouter** - توجيه الصفحات
-- **Framer Motion** - الحركات والتأثيرات
-- **shadcn/ui** - مكونات واجهة المستخدم
-
-## 📦 التثبيت والتشغيل
-
-### المتطلبات
-- Node.js 22 أو أحدث
-- pnpm 10 أو أحدث
-
-### التثبيت المحلي
+Requirements: Node.js 22+ and pnpm 10+.
 
 ```bash
-# استنساخ المستودع
-git clone https://github.com/yourusername/ezaldyn-portfolio-new.git
-cd ezaldyn-portfolio-new
-
-# تثبيت الحزم
+git clone https://github.com/albadyzaldyn111-a11y/ezaldyn-portfolio.git
+cd ezaldyn-portfolio
 pnpm install
-
-# تشغيل خادم التطوير
 pnpm run dev
-
-# الوصول إلى الموقع
-# http://localhost:3000
 ```
 
-### البناء والإنتاج
+Build and preview a production bundle:
 
 ```bash
-# بناء المشروع
 pnpm run build
-
-# اختبار البناء محلياً
 pnpm run preview
-
-# بدء خادم الإنتاج
-pnpm run start
 ```
 
-## 🚀 النشر على GitHub Pages
+## Customization
 
-### الخطوة 1: إنشاء مستودع GitHub
+Portfolio content is organized in the client data and component layers. Update project entries, services, skills, contact links, and media assets there without adding credentials or private client information.
 
-```bash
-# إنشاء مستودع جديد على GitHub
-# (يمكن عبر واجهة GitHub أو استخدام GitHub CLI)
+## SEO and deployment
 
-# أضف المستودع البعيد
-git remote add origin https://github.com/yourusername/ezaldyn-portfolio-new.git
+The project includes a GitHub Pages-oriented configuration and can also be adapted for Netlify or another static host. Before deployment, replace placeholder contact links and verify metadata, canonical URLs, and social preview images.
 
-# ادفع الكود
-git branch -M main
-git push -u origin main
-```
+## Status
 
-### الخطوة 2: تفعيل GitHub Pages
-
-1. اذهب إلى إعدادات المستودع (Settings)
-2. اختر "Pages" من القائمة الجانبية
-3. اختر "GitHub Actions" كمصدر النشر
-4. سيتم النشر تلقائياً عند كل push
-
-### الخطوة 3: الوصول إلى الموقع
-
-الموقع سيكون متاحاً على:
-```
-https://yourusername.github.io/ezaldyn-portfolio-new/
-```
-
-## 📱 تثبيت التطبيق
-
-### على الهاتف (iOS/Android)
-
-1. افتح الموقع في المتصفح
-2. اضغط على قائمة المتصفح (⋮ أو ⋯)
-3. اختر "تثبيت التطبيق" أو "Add to Home Screen"
-4. سيظهر التطبيق على الشاشة الرئيسية
-
-### على سطح المكتب (Windows/Mac/Linux)
-
-1. افتح الموقع في Chrome أو Edge
-2. اضغط على أيقونة التثبيت في شريط العنوان
-3. اختر "تثبيت"
-4. سيظهر التطبيق في قائمة التطبيقات
-
-## 📝 تخصيص المحتوى
-
-### تحديث البيانات
-
-عدّل ملف `client/src/data/portfolio.ts`:
-
-```typescript
-export const heroData = {
-  name: "عزالدين العبادي",
-  title: "مهندس برمجيات",
-  description: "...",
-  // إضافة المزيد من البيانات
-};
-```
-
-### تحديث الصور
-
-1. ضع الصور في `/home/ubuntu/webdev-static-assets/`
-2. استخدم `manus-upload-file` لرفعها
-3. استبدل الروابط في المكونات
-
-### تحديث الألوان
-
-عدّل ملف `client/src/styles/editorial.css`:
-
-```css
-:root {
-  --color-navy: #0F1419;
-  --color-gold: #D4AF37;
-  --color-cream: #F5F1E8;
-}
-```
-
-## 🔧 الصيانة والتحديثات
-
-### تحديث الحزم
-
-```bash
-pnpm update
-```
-
-### التحقق من الأخطاء
-
-```bash
-pnpm run check
-```
-
-### تنسيق الكود
-
-```bash
-pnpm run format
-```
-
-## 🌐 النشر على منصات أخرى
-
-### Netlify
-
-```bash
-# تثبيت Netlify CLI
-npm install -g netlify-cli
-
-# تسجيل الدخول
-netlify login
-
-# نشر الموقع
-netlify deploy --prod --dir=dist/public
-```
-
-### Vercel
-
-```bash
-# تثبيت Vercel CLI
-npm install -g vercel
-
-# نشر الموقع
-vercel --prod
-```
-
-## 📊 الأداء والتحسينات
-
-### Lighthouse Scores
-- Performance: 95+
-- Accessibility: 95+
-- Best Practices: 95+
-- SEO: 100
-
-### تحسينات الأداء
-- ✅ Lazy Loading للصور
-- ✅ Code Splitting
-- ✅ Minification
-- ✅ Gzip Compression
-- ✅ Service Worker Caching
-
-## 🤝 المساهمة
-
-للمساهمة في المشروع:
-
-1. اعمل على فرع جديد
-2. اجعل التغييرات
-3. اختبر التغييرات
-4. أرسل Pull Request
-
-## 📄 الترخيص
-
-هذا المشروع مرخص تحت رخصة MIT.
-
-## 📞 التواصل
-
-- **البريد الإلكتروني**: ezaldyn@example.com
-- **GitHub**: https://github.com/yourusername
-- **LinkedIn**: https://linkedin.com/in/yourusername
-- **Twitter**: https://twitter.com/yourusername
-
-## 🎯 الخطوات التالية
-
-- [ ] إضافة مدونة
-- [ ] إضافة نموذج اتصال ديناميكي
-- [ ] إضافة معرض صور
-- [ ] إضافة نظام تعليقات
-- [ ] إضافة إحصائيات الزوار
-
----
-
-**تم إنشاء هذا المشروع بواسطة Manus AI**
-
-آخر تحديث: يونيو 2026
+Active portfolio project.
